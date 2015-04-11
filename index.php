@@ -12,9 +12,7 @@
 	<header class="header">
 		<div class="fluid-wrapper">
 			<div class="auth">
-				<a class="auth-button login-button" href="#">LOGIN</a>
-				<p>OR</p>
-				<a class="auth-button register-button" href="#">REGISTER</a>
+				<?php include("api/dynamic-content/auth.php"); ?>
 			</div>
 		</div>
 	</header>
