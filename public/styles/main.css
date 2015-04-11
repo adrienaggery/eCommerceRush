@@ -1,0 +1,41 @@
+header {
+    height: 48px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.fluid-wrapper {
+    width: 90%;
+    max-width: 1160px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    background: red;
+}
+
+.auth-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 8px 14px 8px 14px;
+    font-family: Roboto;
+    font-size: 0.7rem;
+}
+
+.login-button {
+    border: 1px solid white;
+    color: white;
+}
+
+.register-button {
+    transition: all 0.2s;
+    background: rgb(0, 175, 188);
+    color: white;
+}
+
+.register-button:hover {
+    background: white;
+    color: black;
+}
+
+.auth p {
+    display: inline-block;
+}
