@@ -31,18 +31,18 @@
 		<div class="fluid-wrapper">
 			<nav>
 				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Homme</a></li>
-					<li><a href="#">Femme</a></li>
-					<li><a href="#">Catégories</a>
-						<ul>
+					<li class="simple"><a href="#">Accueil</a></li>
+					<li class="simple"><a href="#">Homme</a></li>
+					<li class="simple"><a href="#">Femme</a></li>
+					<li class="simple list"><a href="#">Catégories</a>
+						<ul class="deroulant">
 							<li><a href="#">Vestes</a></li>
 							<li><a href="#">Pulls</a></li>
 							<li><a href="#">Chemises</a></li>
 							<li><a href="#">...</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Contactez nous</a></li>
+					<li class="simple"><a href="#">Contactez nous</a></li>
 				</ul>
 			</nav>
 			<div class="cart">
