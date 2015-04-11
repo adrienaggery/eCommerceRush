@@ -1,3 +1,3 @@
 <?php
-	$db = new mysqli("local.42.fr", "root", "rush00", "rush00");
+$db = mysqli_connect("local.42.fr, "rush00", "rush00", "rush00");
 ?>
