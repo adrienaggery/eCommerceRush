@@ -46,7 +46,7 @@
 				</ul>
                 <div class="cart">
 				<img class="cart-icon" height="32" width="32" src="http://placehold.it/32x32" />
-				<p>x items<br/>$10.00</p>
+				<?php include("api/dynamic-content/cart.php"); ?>
 			</div>
 			</nav>
 		</div>
