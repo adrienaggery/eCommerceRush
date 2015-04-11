@@ -7,17 +7,21 @@ header, section, footer {
     max-width: 1160px;
     height: 100%;
     margin: 0 auto 0 auto;
+    clear: both;
 }
 
 .header {
-    height: 40px;
+    height: 48px;
     background: black;
 }
 
 .auth {
     display: inline-block;
     float: right;
-    height: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+ 
 }
 
 .auth-button, .auth p {
@@ -29,11 +33,12 @@ header, section, footer {
 .auth-button {
     border-radius: 4px;
     padding: 5px;
+    
 }
 
 .login-button {
     border: 1px solid white;
-    margin: 5px;
+    margin: 0 5px 0 0;
 }
 
 .auth p {
@@ -43,7 +48,7 @@ header, section, footer {
 .register-button {
     transition: all 0.2s;
     background: rgb(0, 175, 188);
-    margin: 5px;
+    margin: 0 0 0 5px;
 }
 
 .register-button:hover {
@@ -54,20 +59,16 @@ header, section, footer {
 
 /* FIN DU HEADER #1 */
 
-.subheader {
-    height: 60px;
-}
-
 .site-logo {
     display: inline-block;
-    float:left;
-    margin: 10px;
+    margin: 20px 0 20px 0;
+    float: left;
 }
 
-.search form {
+.search {
     display: inline-block;
     float: right;
-    margin: 18px 5px 0 0;
+    margin: 25px 0 0 0;
 }
 
 /* FIN DU SUBHEADER #1 */
@@ -77,9 +78,6 @@ header, section, footer {
     border-bottom: 1px solid #D8D8D8;
 }
 
-.subsubheader nav {
-    display: inline-block;
-}
 
 .simple {
     display: inline-block;
@@ -109,7 +107,7 @@ header, section, footer {
 
 .deroulant {
     position: absolute;
-    left: 2px;
+    left: 10px;
     top: 59px;
     box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.25);
     display: none;
@@ -121,9 +119,20 @@ header, section, footer {
 }
 
 .cart {
+    display: inline-block;
     float: right;
 }
 
 .cart img, .cart p {
     display: inline-block;
+}
+
+/* FIN HEADER MENUS */
+
+.shop-homme {
+    display: inline-block;
+    background-color: red;
+    height: 800px;
+    width: 50%;
+    background-image:url("public/images/guy.jpg");
 }

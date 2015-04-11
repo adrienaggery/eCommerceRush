@@ -44,11 +44,11 @@
 					</li>
 					<li class="simple"><a href="#">Contactez nous</a></li>
 				</ul>
-			</nav>
-			<div class="cart">
+                <div class="cart">
 				<img class="cart-icon" height="32" width="32" src="http://placehold.it/32x32" />
 				<p>x items<br/>$10.00</p>
 			</div>
+			</nav>
 		</div>
 	</header>
 	<section class="shops">
