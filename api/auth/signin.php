@@ -25,6 +25,10 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 		$response["error"] = 0;
 		$response["msg"] = "User succesfully logged in";
 		$response["user_id"] = $user_id;
+
+		session_start();
+		$_SESSION["user_id"] = $user_id;
+		$_SESSION["username"] = $username;
 	}
 
 	mysqli_stmt_close($query);
