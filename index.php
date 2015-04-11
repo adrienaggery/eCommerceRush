@@ -65,14 +65,15 @@
 	</section>
 	<section class="featured-products">
 		<div class="fluid-wrapper">
-			<div class="product-card">
+			<?php include("api/dynamic-content/featured.php"); ?>
+			<!--<div class="product-card">
 				<div class="image"></div>
 				<div class="description">
 					<p class="name">Chemise laine</p>
 					<p class="price">$25.00</p>
 				</div>
 				<a class="addtocart"></a>
-			</div>
+			</div>-->
 		</div>
 	</section>
 	<footer>
