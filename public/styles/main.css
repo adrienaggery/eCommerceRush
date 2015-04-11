@@ -1,4 +1,41 @@
-.header, .subheader, .subsubheader {
-	width: 100%;	
-	
+header, section, footer {
+	width: 100%;
+}
+
+.fluid-wrapper {
+    width: 90%;
+    max-width: 1160px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.header {
+    height: 40px;
+    background: black;
+}
+
+.auth {
+    display: inline-block;
+    float: right;
+    height: 40px;
+}
+
+.auth-button, .auth p {
+    display: inline-block;
+    font-family: Roboto;
+    color: white;
+}
+
+.auth-button {
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.login-button {
+    border: 1px solid white;
+}
+
+.register-button {
+    transition: all 0.2s;
+    background: rgb(0, 175, 188);
 }

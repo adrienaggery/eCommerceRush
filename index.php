@@ -12,9 +12,9 @@
 	<header class="header">
 		<div class="fluid-wrapper">
 			<div class="auth">
-				<a class="auth-button login-button">LOGIN</a>
+				<a class="auth-button login-button" href="#">LOGIN</a>
 				<p>OR</p>
-				<a class="auth-button register-button">REGISTER</a>
+				<a class="auth-button register-button" href="#">REGISTER</a>
 			</div>
 		</div>
 	</header>
@@ -66,7 +66,7 @@
 		</div>
 	</section>
 	<section class="featured-products">
-		<div class="fluid-container">
+		<div class="fluid-wrapper">
 			<div class="product-card">
 				<div class="image"></div>
 				<div class="description">
@@ -78,7 +78,7 @@
 		</div>
 	</section>
 	<footer>
-		<div class="fluid-container">
+		<div class="fluid-wrapper">
 			<p>Copyright 2015 &copy Jason & Adrien</p>
 			<a class="backoffice-link">Backoffice</a>
 		</div>
