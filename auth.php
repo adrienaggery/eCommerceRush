@@ -21,7 +21,7 @@
 		</div>
 		<div class="midbar">
 			<div class="fluid-wrapper">
-				<img class="site-logo" height="35" src="http://placehold.it/130x35" />
+				<img class="site-logo" height="35" src="public/images/logo.png" />
 				<form class="search">
 					<input class="searchbar" type="text" name="search" placeholder="Search product">
 					<input class="search-button" type="submit" value="Submit">
@@ -61,6 +61,12 @@
 			</div>
 		</div>
 	</header>
+	<section class="featured-title">
+		<div class="fluid-wrapper">
+			<p>AUTHENTIFICATION</p>
+			<div class="line"></div>
+		</div>
+	</section>
 	<section class="auth-section">
 		<div class="fluid-wrapper">
 			<div class="auth-bloc login">
@@ -81,12 +87,7 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class="fluid-wrapper">
-			<p class="copyright">Copyright 2015 &copy Jason & Adrien</p>
-			<a class="backoffice-link" href="#">Backoffice</a>
-		</div>
-	</footer>
+	<?php include("parts/footer.php"); ?>
 </body>
 
 </html>

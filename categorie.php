@@ -41,11 +41,6 @@
 			<?php include("dynamic-content/product-cat.php"); ?>
 		</div>
 	</section>
-	<footer>
-		<div class="fluid-wrapper">
-			<p class="copyright">Copyright 2015 &copy Jason & Adrien</p>
-			<a class="backoffice-link" href="#">Backoffice</a>
-		</div>
-	</footer>
+	<?php include("parts/footer.php"); ?>
 </body>
 </html>

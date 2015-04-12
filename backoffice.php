@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>ft_minishop</title>
+	<title>ft_minishop - backoffice</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="public/styles/reset.css">
@@ -28,27 +28,21 @@
 		</div>
 		<div class="botbar">
 			<div class="fluid-wrapper">
-				<?php include("parts/menu.php"); ?>
-				<a href="cart.php" class="cart">
-					<img class="cart-icon" height="24" width="22" src="public/images/cart-icon.png" />
-					<?php include("dynamic-content/cart.php"); ?>
-				</a>
+				<?php include("parts/backofficemenu.php"); ?>
 			</div>
 		</div>
 	</header>
-	<section class="product">
+	<section class="featured-title">
 		<div class="fluid-wrapper">
-			<?php include("dynamic-content/product-info.php"); ?>
-			<img class="product-image" width="48%" src="public/images/products/<?php echo $product_info["image"]; ?>"/><!-- WP
-			--><div class="product-desc">
-				<p class="p_name"><?php echo $product_info["name"]; ?></p>
-				<p class="p_price">$<?php echo $product_info["price"]; ?></p>
-				<div class="line"></div>
-				<p class="p_desc"><?php echo $product_info["desc"] ?></p>
-				<a class="addtocart-button" href="handlers/addtocart.php?product_id=<?php echo $product_info["id"] ?>">ADD TO CART</a>
-			</div>
+			<p>ACCUEIL BACKOFFICE</p>
+			<div class="line"></div>
 		</div>
 	</section>
-	<?php include("parts/footer.php"); ?>
+	<footer>
+		<div class="fluid-wrapper">
+			<p class="copyright">Copyright 2015 &copy Jason & Adrien</p>
+			<a class="backoffice-link" href="#">Backoffice</a>
+		</div>
+	</footer>
 </body>
 </html>

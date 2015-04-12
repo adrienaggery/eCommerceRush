@@ -48,11 +48,6 @@
 			<?php session_start(); if(!empty($_SESSION["user_id"]) && !empty($_SESSION["username"]) && !empty($_SESSION["cart"])) { echo '<br/><a class="validate-cart-button" href="handlers/validatecart.php">COMMANDER</a>'; } ?>
 		</div>
 	</section>
-	<footer>
-		<div class="fluid-wrapper">
-			<p class="copyright">Copyright 2015 &copy Jason & Adrien</p>
-			<a class="backoffice-link" href="#">Backoffice</a>
-		</div>
-	</footer>
+	<?php include("parts/footer.php"); ?>
 </body>
 </html>
