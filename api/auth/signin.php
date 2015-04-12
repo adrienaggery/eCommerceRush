@@ -1,11 +1,7 @@
 <?php
-
-header('Content-type: application/json');
-$response = array();
-
 if (!empty($_POST["username"]) && !empty($_POST["password"]))
 {
-	include("../dbconnect.php");
+	include("db/connect.php");
 
 	$username = $_POST["username"];
 	$hashed_password = hash("whirlpool", $_POST["password"]);
@@ -18,14 +14,9 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 	mysqli_stmt_fetch($query);
 
 	if (empty($user_if)) {
-		$response["error"] = 1;
-		$response["msg"] = "Invalid credentials";
+		echo "<script type='text/javascript'>document.location.replace('signin.php');</script>";
 	}
 	else {
-		$response["error"] = 0;
-		$response["msg"] = "User succesfully logged in";
-		$response["user_id"] = $user_id;
-
 		session_start();
 		$_SESSION["user_id"] = $user_id;
 		$_SESSION["username"] = $username;
@@ -35,10 +26,6 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 	mysqli_close($db);
 }
 else {
-	$response["error"] = 1;
-	$response["msg"] = "Empty username or password";
+    echo "<script type='text/javascript'>document.location.replace('signin.php');</script>";
 }
-
-echo json_encode($response);
-
 ?>
