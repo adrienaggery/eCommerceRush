@@ -1,8 +1,4 @@
 <?php
-
-header('Content-type: application/json');
-$response = array();
-
 if (!empty($_POST["username"]) && !empty($_POST["password"]))
 {
 	include("../dbconnect.php");
@@ -18,20 +14,18 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 	mysqli_stmt_execute($query);
 
 	// Check for Errors
-	if (mysqli_stmt_errno($query) === 1062)
-	{
-		$response["error"] = 1;
-		$response["msg"] = "User already exists";
-	}
-	else if (mysqli_stmt_errno($query))
-	{
-		$response["error"] = 1;
-		$response["msg"] = "User not created, unknown error: " . mysqli_stmt_errno();
 
+	if (mysqli_stmt_errno($query) === 1062) // User exists
+	{
+        echo "<script type='text/javascript'>document.location.replace('signup_error.php');</script>";
 	}
-	else {
-		$response["error"] = 0;
-		$response["msg"] = "User succesfully created";
+	else if (mysqli_stmt_errno($query)) // Unknown error
+	{
+        echo "<script type='text/javascript'>document.location.replace('signup_error.php');</script>";
+	}
+	else // All good!
+	{
+        echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
 	}
 
 	// Close connection
@@ -42,7 +36,4 @@ else {
 	$response["error"] = 1;
 	$response["msg"] = "Empty username or password";
 }
-
-echo json_encode($response);
-
 ?>
