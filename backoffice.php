@@ -1,3 +1,7 @@
+<?php
+include("dynamic-content/canaccessbo.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
