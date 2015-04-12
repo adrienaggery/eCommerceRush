@@ -1,0 +1,133 @@
+header, section, footer {
+	width: 100%;
+}
+
+.fluid-wrapper {
+    width: 90%;
+    max-width: 1160px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    clear: both;
+}
+
+.header {
+    height: 48px;
+    background: black;
+}
+
+.auth {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+ 
+}
+
+.auth-button, .auth p {
+    display: inline-block;
+    font-family: Roboto;
+    color: white;
+}
+
+.auth-button {
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+
+.login-button {
+    border: 1px solid white;
+    margin: 0 5px 0 0;
+}
+
+.auth p {
+    font-size: 0.8em;
+}
+
+.register-button {
+    transition: all 0.2s;
+    background: rgb(0, 175, 188);
+    margin: 0 0 0 5px;
+}
+
+.register-button:hover {
+    transition: 0.8s;
+    background: white;
+    color: rgb(0, 175, 188);
+}
+
+/* FIN DU HEADER #1 */
+
+.site-logo {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    float: left;
+}
+
+.search {
+    display: inline-block;
+    float: right;
+    margin: 25px 0 0 0;
+}
+
+/* FIN DU SUBHEADER #1 */
+
+.subsubheader .fluid-wrapper {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+
+.simple {
+    display: inline-block;
+}
+
+.subsubheader .simple a {
+    font-family: Roboto;
+    text-decoration: none;
+    color: #585D5C;
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+}
+
+.subsubheader .simple a:hover {
+    transition: 0.8s;
+    background: #F0F4F4;
+    color: #222;
+}
+
+.subsubheader .list {
+    position: relative;
+}
+
+.subsubheader .list:hover .deroulant {
+    display: block;
+}
+
+.deroulant {
+    position: absolute;
+    left: 10px;
+    top: 59px;
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.25);
+    display: none;
+}
+
+.deroulant a {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.cart {
+    display: inline-block;
+    float: right;
+}
+
+.cart img, .cart p {
+    display: inline-block;
+}
+
+/* FIN HEADER MENUS */
+
+/* DEBUT PRODUCT WRAPPER */
+
