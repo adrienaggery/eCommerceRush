@@ -331,7 +331,7 @@ nav > ul > li > ul {
 .product-card:nth-child(16),
 .product-card:nth-child(20),
 .product-card:nth-child(24),
-.product-card:last-child,{
+.product-card:last-child{
 	margin-right: 0;
 }
 
