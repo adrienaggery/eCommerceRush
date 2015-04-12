@@ -208,6 +208,71 @@ nav > ul > li > ul {
 	background: rgba(0, 0, 0, 0.3);
 }
 
+/* AUTH PAGE */
+
+.auth-section{
+	margin: 30px 0 0 0;
+}
+
+.auth-bloc {
+	display:inline-block;
+	width: 50%;
+}
+
+.auth-bloc form {
+	margin: 0 auto 0 auto;
+	width: 50%;
+	text-align: center;
+}
+
+.auth-bloc .title {
+	text-align: center;
+	font-family: Roboto;
+	color: rgb(105, 112, 113);
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.auth-bloc .field-name {
+	margin: 0 10px 0 0;
+	display: inline-block;
+	font-family: Roboto;
+	font-size: 14px;
+	color: rgb(105, 112, 113);
+}
+
+.auth-bloc input{
+	margin: 16px auto 0 auto;
+	display: inline-block;
+}
+
+.username-field, .password-field {
+	padding: 0 10px;
+	border-radius: 4px;
+	height: 35px;
+	border: 1px solid rgb(225, 225, 225);
+}
+
+.auth-bloc.login {
+	border-right: 1px solid rgb(241, 241, 241); 
+}
+
+.submit-auth {
+	transition: all 0.2s;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background: rgb(0, 175, 188);
+	border-radius: 4px;
+	border: none;
+	padding: 10px 30px;
+}
+
+.submit-auth:hover {
+    background: black;
+}
+
 /* FEATURED TITLE */
 
 .featured-title {
