@@ -1,9 +1,6 @@
 <?php
 session_start();
-
 include("db/connect.php");
-
-$_SESSION['cart']['1'] = 2;
 
 $totalprice = 0;
 
@@ -15,8 +12,9 @@ foreach($_SESSION["cart"] as $item_id => $item_count){
 	mysqli_stmt_execute($query);
 	mysqli_stmt_fetch($query);
 
-	$totalprice =+ ($item_price * $item_count);
+	$totalprice += ($item_price * $item_count);
+    $totalitems += $item_count;
 }
 
-echo '<p class="cart-desc"> ' . count($_SESSION["cart"]) . ' items<br/>$' . $totalprice. '</p>';
+echo '<p class="cart-desc"> ' . $totalitems . ' items<br/>$' . $totalprice. '</p>';
 ?>
