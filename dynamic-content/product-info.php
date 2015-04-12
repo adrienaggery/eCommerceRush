@@ -1,6 +1,6 @@
 <?php
 	if (!empty($_GET["product_id"])){
-		include("../api/dbconnect.php");
+		include("db/connect.php");
 
 		$query = mysqli_stmt_init($db);
 		mysqli_stmt_prepare($query, 'SELECT * FROM products WHERE id=?');

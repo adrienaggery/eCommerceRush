@@ -19,7 +19,7 @@
 		</div>
 		<div class="midbar">
 			<div class="fluid-wrapper">
-				<img class="site-logo" height="35" src="http://placehold.it/130x35" />
+				<img class="site-logo" height="35" src="public/images/logo.png" />
 				<form class="search">
 					<input class="searchbar" type="text" name="search" placeholder="Search product">
 					<input class="search-button" type="submit" value="Submit">

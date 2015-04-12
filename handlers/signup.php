@@ -25,7 +25,7 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 	}
 	else // All good!
 	{
-        echo "<script type='text/javascript'>document.location.replace('../index.php');</script>";
+        echo "<script type='text/javascript'>document.location.replace('../auth.php');</script>";
 	}
 
 	// Close connection
