@@ -73,6 +73,10 @@ header, section, footer {
 
 /* FIN DU SUBHEADER #1 */
 
+nav {
+    display: inline-block;   
+}
+
 .subsubheader .fluid-wrapper {
     border-top: 1px solid #D8D8D8;
     border-bottom: 1px solid #D8D8D8;
@@ -114,6 +118,7 @@ header, section, footer {
 }
 
 .deroulant a {
+    background-color : rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
     width: 100%;
 }
@@ -144,4 +149,41 @@ header, section, footer {
 .shop-femme {
     background: url("../images/girl.jpeg") center no-repeat;
     background-size: cover;
+}
+
+/* FIN IMAGES SHOPS */
+
+.featured-title {
+    margin: 20px 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.featured-title p {
+    display: inline-block;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: black;
+    background: rgb(243, 243, 243);
+    padding: 10px 50px;
+}
+
+.featured-title .line {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    bottom: 22px;
+    background: rgb(243, 243, 243);
+    z-index: -99;
+}
+
+footer p {
+    float: left;
+}
+
+.backoffice-link {
+    float: right;
 }
