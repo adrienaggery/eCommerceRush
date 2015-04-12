@@ -2,11 +2,11 @@
 	<ul>
 		<li><a href="index.php">RETOUR AU SITE</a>
 		</li>
-		<li><a href="categorie.php?cat_id=1">PRODUITS</a>
+		<li><a href="products-backoffice.php">PRODUITS</a>
 		</li>
-		<li><a href="categorie.php?cat_id=2">USERS</a>
+		<li><a href="users-backoffice.php">USERS</a>
 		</li>
-		<li><a href="index.php">ORDERS</a>
+		<li><a href="orders-backoffice.php">ORDERS</a>
 		</li>
 	</ul>
 </nav>
