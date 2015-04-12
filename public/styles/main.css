@@ -156,6 +156,15 @@ nav > ul > li > ul {
 
 .cart-desc {
 	display:inline-block;
+	margin-left: 10px;
+	font-family: Roboto;
+	font-size: 12px;
+	line-height: 18px;
+	color: black;
+}
+
+.cart-desc span {
+	font-weight: bold;
 }
 
 /* SHOPS */
