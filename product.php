@@ -53,13 +53,13 @@
 	</header>
 	<section class="product">
 		<div class="fluid-wrapper">
-			<?php include("api/dynamic-content/product.php"); ?>
+			<?php include("dynamic-content/product-info.php"); ?>
 			<img class="product_image" width="48%" src="public/images/products/<?php echo $product_info["image"]; ?>"/>
 			<div class="product-desc-wrapper">
 				<p><?php echo $product_info["name"]; ?></p>
-				<p><?php echo $product_info["price"] ?></p>
+				<p><?php echo $product_info["price"]; ?></p>
 				<div class="line"></div>
-				<p><?php echo $product_info["description"] ?></p>
+				<p><?php echo $product_info["desc"] ?></p>
 				<a class="addtocart-button" href="#">Add to cart</a>
 			</div>
 		</div>
