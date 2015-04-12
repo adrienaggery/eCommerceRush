@@ -1,7 +1,7 @@
 <?php
-$db = mysqli_connect("local.42.fr", "root", "jasonmax", "rush00");
-if (mysqli_connect_errno())
-    echo "Error connecting to database";
+
+include("db/connect.php");
+
 $query = mysqli_stmt_init($db);
 mysqli_stmt_prepare($query, 'SELECT id, product_name, product_price, product_image FROM products WHERE featured=1 ORDER BY last_modif LIMIT 0,4');
 mysqli_stmt_bind_result($query, $product_id, $product_name, $product_price, $product_image);
