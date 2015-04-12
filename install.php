@@ -202,5 +202,5 @@ unset($_SESSION['cart']);
 unset($_SESSION['user_id']);
 unset($_SESSION['username']);
 
-echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
+echo "Website installed!";
 ?>
