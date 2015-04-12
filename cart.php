@@ -36,6 +36,12 @@
 			</div>
 		</div>
 	</header>
+	<section class="featured-title">
+		<div class="fluid-wrapper">
+			<p>SHOPPING-CART</p>
+			<div class="line"></div>
+		</div>
+	</section>
 	<section class="cart-section">
 		<div class="fluid-wrapper">
 			<?php include("dynamic-content/cart-items.php"); ?>
