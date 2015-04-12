@@ -1,5 +1,4 @@
 <?php
-$_GET['product_id'] = "1";
 	if (!empty($_GET["product_id"])){
 		include("../api/dbconnect.php");
 
