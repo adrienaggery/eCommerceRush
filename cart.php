@@ -45,7 +45,7 @@
 	<section class="cart-section">
 		<div class="fluid-wrapper">
 			<?php include("dynamic-content/cart-items.php"); ?>
-			<?php session_start(); if(!empty($_SESSION["user_id"]) && !empty($_SESSION["username"]) && !empty($_SESSION["cart"])) { echo '<br/><a class="validate-cart-button" href="handlers/validate-cart.php">COMMANDER</a>'; } ?>
+			<?php session_start(); if(!empty($_SESSION["user_id"]) && !empty($_SESSION["username"]) && !empty($_SESSION["cart"])) { echo '<br/><a class="validate-cart-button" href="handlers/validatecart.php">COMMANDER</a>'; } ?>
 		</div>
 	</section>
 	<footer>
