@@ -39,7 +39,7 @@
 	<section class="product">
 		<div class="fluid-wrapper">
 			<?php include("dynamic-content/product-info.php"); ?>
-			<img class="product-image" width="48%" src="public/images/products/<?php echo $product_info["image"]; ?>"/><!-- WP
+			<img class="product-image" width="48%" src="<?php echo $product_info["image"]; ?>"/><!-- WP
 			--><div class="product-desc">
 				<p class="p_name"><?php echo $product_info["name"]; ?></p>
 				<p class="p_price">$<?php echo $product_info["price"]; ?></p>
