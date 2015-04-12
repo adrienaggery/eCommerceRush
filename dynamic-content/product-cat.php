@@ -10,7 +10,7 @@ $product_categories = explode(",", $product_categories);
 while (mysqli_stmt_fetch($query)){
     if (in_array($_GET['cat_id'], $product_categories))
     {
-        echo '<div class="product-card"><div class="image" style="background: url(\'public' . '/' . 'images/products/' . $product_image . '\') center no-repeat; background-size: cover;"></div><div class="description"><p class="categories">Chemise, Homme</p><p class="name">' . $product_name . '</p><p class="price">$' . $product_price . '</p><a class="addtocart" href="handlers/addtocart.php?product_id=' . $product_id .'">Ajouter au panier</a></div></div>';
+        echo '<div class="product-card"><div class="image" style="background: url(\'' . $product_image . '\') center no-repeat; background-size: cover;"></div><div class="description"><p class="categories">Chemise, Homme</p><p class="name">' . $product_name . '</p><p class="price">$' . $product_price . '</p><a class="addtocart" href="handlers/addtocart.php?product_id=' . $product_id .'">Ajouter au panier</a></div></div>';
     }
 }
 mysqli_stmt_close($query);
