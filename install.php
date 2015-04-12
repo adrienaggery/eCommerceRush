@@ -197,4 +197,10 @@ $query = mysqli_multi_query($db, $sql);
 mysqli_stmt_execute($query);
 mysqli_stmt_close($query);
 
+session_start();
+unset($_SESSION['cart']);
+unset($_SESSION['user_id']);
+unset($_SESSION['username']);
+
+echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
 ?>
