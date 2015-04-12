@@ -512,3 +512,25 @@ footer .fluid-wrapper {
 .cart-section {
 	margin: 30px 0 0 0;
 }
+
+.cart-section .fluid-wrapper {
+	text-align: center;
+}
+
+.validate-cart-button {
+	transition: all 0.2s;
+	margin: 0 auto 0 auto;
+	font-family: Roboto;
+	font-size: 18px;
+	color: white;
+	font-weight: normal;
+	margin: 30px 0 0 0;
+	border-radius: 4px;
+	background: rgb(0, 175, 188);
+	display: inline-block;
+	padding: 10px 50px;
+}
+
+.validate-cart-button:hover {
+	background: black;
+}
