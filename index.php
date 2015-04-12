@@ -29,10 +29,10 @@
 		<div class="botbar">
 			<div class="fluid-wrapper">
 				<?php include("parts/menu.php"); ?>
-				<div class="cart">
+				<a href="cart.php" class="cart">
 					<img class="cart-icon" height="24" width="22" src="public/images/cart-icon.png" />
 					<?php include("dynamic-content/cart.php"); ?>
-				</div>
+				</a>
 			</div>
 		</div>
 	</header>
