@@ -28,22 +28,7 @@
 		</div>
 		<div class="botbar">
 			<div class="fluid-wrapper">
-				<nav>
-					<ul>
-						<li><a href="#">ACCUEIL</a></li>
-						<li><a href="#">HOMME</a></li>
-						<li><a href="#">FEMME</a></li>
-						<li><a href="#">CATEGORIES</a>
-							<ul>
-								<li><a href="#">VESTES</a></li>
-								<li><a href="#">PULLS</a></li>
-								<li><a href="#">CHEMISES</a></li>
-								<li><a href="#">...</a></li>
-							</ul>
-						</li>
-						<li><a href="#">CONTACTEZ NOUS</a></li>
-					</ul>
-				</nav>
+				<?php include("parts/menu.php"); ?>
 				<div class="cart">
 					<img class="cart-icon" height="24" width="22" src="public/images/cart-icon.png" />
 					<?php include("dynamic-content/cart.php"); ?>
@@ -53,8 +38,8 @@
 	</header>
 	<section class="shops">
 		<div class="fluid-wrapper">
-			<div class="shop-big shop-homme"><a href="a">ACHAT HOMME</a></div><!-- WP
-			--><div class="shop-big shop-femme"><a href="a">ACHAT FEMME</a></div>
+			<div class="shop-big shop-homme"><a href="categorie.php?cat_id=1">ACHAT HOMME</a></div><!-- WP
+			--><div class="shop-big shop-femme"><a href="categorie.php?cat_id=2">ACHAT FEMME</a></div>
 		</div>
 	</section>
 	<section class="featured-title">

@@ -28,22 +28,7 @@
 		</div>
 		<div class="botbar">
 			<div class="fluid-wrapper">
-				<nav>
-					<ul>
-						<li><a href="#">ACCUEIL</a></li>
-						<li><a href="#">HOMME</a></li>
-						<li><a href="#">FEMME</a></li>
-						<li><a href="#">CATEGORIES</a>
-							<ul>
-								<li><a href="#">VESTES</a></li>
-								<li><a href="#">PULLS</a></li>
-								<li><a href="#">CHEMISES</a></li>
-								<li><a href="#">...</a></li>
-							</ul>
-						</li>
-						<li><a href="#">CONTACTEZ NOUS</a></li>
-					</ul>
-				</nav>
+				<?php include("parts/menu.php"); ?>
 				<div class="cart">
 					<img class="cart-icon" height="24" width="22" src="public/images/cart-icon.png" />
 					<?php include("dynamic-content/cart.php"); ?>
