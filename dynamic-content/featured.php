@@ -24,7 +24,7 @@ while (mysqli_stmt_fetch($query)){
         $prod = "Pantalon,";
     if (in_array('9', $product_categories))
         $prod = "Jean,";
-        echo '<div class="product-card"><div class="image" style="background: url(\'' . $product_image . '\') center no-repeat; background-size: cover;">   </div><div class="description"><p class="categories">' . $prod . $sexe . '</p><p class="name">' . $product_name . '</p><p class="price">$' .   $product_price . '</p><a class="addtocart" href="handlers/addtocart.php?product_id=' . $product_id .'">Ajouter au panier</a></div></div>';
+    echo '<div class="product-card"><div class="image" style="background: url(\'' . $product_image . '\') center no-repeat; background-size: cover;">   </div><div class="description"><p class="categories">' . $prod . $sexe . '</p><p class="name">' . $product_name . '</p><p class="price">$' .   $product_price . '</p><a class="addtocart" href="handlers/addtocart.php?product_id=' . $product_id .'">Ajouter au panier</a></div></div>';
 }
 
 mysqli_stmt_close($query);
