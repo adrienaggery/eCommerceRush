@@ -44,21 +44,20 @@ include("dynamic-content/canaccessbo.php");
 	</section>
 	<section class="bo-products">
 		<div class="fluid-wrapper">
-			<div class="prod-col">
-				<p class="title">Already have an account ? Just log in !</p>
-
+			<div class="auth-bloc login">
+				<p class="title">Available products</p>
 			</div><!-- WP
-			--><div class="prod-col">
+			--><div class="auth-bloc register">
 				<p class="title">Add a product</p>
 				<form method="post" action="handlers/add_product_bo.php">
-					<p class="field-addprod">Nom: </p><input class="addproduct-field" type="text" name="name"><br/>
-					<p class="field-addprod">Description: </p><input class="addproduct-field" type="text" name="desc"><br/>
-					<p class="field-addprod">Prix: </p><input class="addproduct-field" type="text" name="price"><br/>
-					<p class="field-addprod">Categories: </p><input class="addproduct-field" type="text" name="categories"><br/>
-					<p class="field-addprod">Image (url): </p><input class="addproduct-field" type="text" name="image"><br/>
-					<p class="field-addprod">Stock: </p><input class="addproduct-field" type="text" name="stock"><br/>
-					<p class="field-addprod">Featured? : </p><input class="addproduct-field" type="text" name="featured"><br/>
-					<input class="submit-addproduct" type="submit">
+					<p class="field-name">Nom: </p><input class="addproduct-field" type="text" name="name"><br/>
+					<p class="field-name">Description: </p><input class="addproduct-field" type="text" name="desc"><br/>
+					<p class="field-name">Prix: </p><input class="addproduct-field" type="text" name="price"><br/>
+					<p class="field-name">Categories: </p><input class="addproduct-field" type="text" name="categories"><br/>
+					<p class="field-name">Image (url): </p><input class="addproduct-field" type="text" name="image"><br/>
+					<p class="field-name">Stock: </p><input class="addproduct-field" type="text" name="stock"><br/>
+					<p class="field-name">Featured? : </p><input class="addproduct-field" type="text" name="featured"><br/>
+					<input class="submit-auth" type="submit">
 				</form>
 			</div>
 		</div>
