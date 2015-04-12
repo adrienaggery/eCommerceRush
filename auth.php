@@ -32,7 +32,7 @@
 			<div class="fluid-wrapper">
 				<nav>
 					<ul>
-						<li><a href="#">ACCUEIL</a>
+						<li><a href="index.php">ACCUEIL</a>
 						</li>
 						<li><a href="#">HOMME</a>
 						</li>
