@@ -129,10 +129,19 @@ header, section, footer {
 
 /* FIN HEADER MENUS */
 
-.shop-homme {
+.shop-big {
+    width: 48%;
+    height:400px;
     display: inline-block;
-    background-color: red;
-    height: 800px;
-    width: 50%;
-    background-image:url("public/images/guy.jpg");
+}
+
+.shop-homme {
+    background: url("../images/guy.jpeg") center no-repeat;
+    background-size: cover;
+    margin-right: 4%;
+}
+
+.shop-femme {
+    background: url("../images/girl.jpeg") center no-repeat;
+    background-size: cover;
 }

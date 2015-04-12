@@ -53,8 +53,8 @@
 	</header>
 	<section class="shops">
 		<div class="fluid-wrapper">
-			<a class="shop-big shop-homme">SHOP HOMME</a>
-			<a class="shop-big shop-femme">SHOP FEMME</a>
+			<a class="shop-big shop-homme" href="#">SHOP HOMME</a><!-- WP
+			--><a class="shop-big shop-femme" href="#">SHOP FEMME</a>
 		</div>
 	</section>
 	<section class="featured-title">
