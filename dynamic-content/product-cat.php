@@ -1,5 +1,4 @@
 <?php
-$_GET['cat_id'] = "9";
 include("db/connect.php");
 
 $query = mysqli_stmt_init($db);
