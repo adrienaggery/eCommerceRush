@@ -1,7 +1,7 @@
 <?php
 if (!empty($_POST["username"]) && !empty($_POST["password"]))
 {
-	include("db/connect.php");
+	include("../db/connect.php");
 
 	// Hashing
 	$username = $_POST["username"];
