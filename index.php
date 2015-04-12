@@ -9,52 +9,52 @@
     <link rel="stylesheet" href="public/styles/main.css">
 </head>
 <body>
-	<header class="header">
-		<div class="fluid-wrapper">
-			<div class="auth">
-				<?php include("api/dynamic-content/auth.php"); ?>
+	<header>
+		<div class="topbar">
+			<div class="fluid-wrapper">
+				<div class="auth">
+					<?php include("dynamic-content/auth.php"); ?>
+				</div>
 			</div>
 		</div>
-	</header>
-	<header class="subheader">
-		<div class="fluid-wrapper">
-			<img class="site-logo" height="35" src="http://placehold.it/130x35" />
-			<div class="search">
-				<form>
-					<input class="searchbar" placeholder="Search product">
-					<input class="submit-button" type="submit">
+		<div class="midbar">
+			<div class="fluid-wrapper">
+				<img class="site-logo" height="35" src="http://placehold.it/130x35" />
+				<form class="search">
+					<input class="searchbar" type="text" name="search" placeholder="Search product">
+					<input class="search-button" type="submit" value="Submit">
 				</form>
 			</div>
 		</div>
-	</header>
-	<header class="subsubheader">
-		<div class="fluid-wrapper">
-			<nav>
-				<ul>
-					<li class="simple"><a href="#">Accueil</a></li>
-					<li class="simple"><a href="#">Homme</a></li>
-					<li class="simple"><a href="#">Femme</a></li>
-					<li class="simple list"><a href="#">Catégories</a>
-						<ul class="deroulant">
-							<li><a href="#">Vestes</a></li>
-							<li><a href="#">Pulls</a></li>
-							<li><a href="#">Chemises</a></li>
-							<li><a href="#">...</a></li>
-						</ul>
-					</li>
-					<li class="simple"><a href="#">Contactez nous</a></li>
-				</ul>
-                <div class="cart">
-				<img class="cart-icon" height="32" width="32" src="http://placehold.it/32x32" />
-				<?php include("api/dynamic-content/cart.php"); ?>
+		<div class="botbar">
+			<div class="fluid-wrapper">
+				<nav>
+					<ul>
+						<li><a href="#">ACCUEIL</a></li>
+						<li><a href="#">HOMME</a></li>
+						<li><a href="#">FEMME</a></li>
+						<li><a href="#">CATEGORIES</a>
+							<ul>
+								<li><a href="#">VESTES</a></li>
+								<li><a href="#">PULLS</a></li>
+								<li><a href="#">CHEMISES</a></li>
+								<li><a href="#">...</a></li>
+							</ul>
+						</li>
+						<li><a href="#">CONTACTEZ NOUS</a></li>
+					</ul>
+				</nav>
+				<div class="cart">
+					<img class="cart-icon" height="32" width="32" src="http://placehold.it/32x32" />
+					<?php include("api/dynamic-content/cart.php"); ?>
+				</div>
 			</div>
-			</nav>
 		</div>
 	</header>
 	<section class="shops">
 		<div class="fluid-wrapper">
-			<a class="shop-big shop-homme" href="#">SHOP HOMME</a><!-- WP
-			--><a class="shop-big shop-femme" href="#">SHOP FEMME</a>
+			<div class="shop-big shop-homme"><a href="a">ACHAT HOMME</a></div><!-- WP
+			--><div class="shop-big shop-femme"><a href="a">ACHAT FEMME</a></div>
 		</div>
 	</section>
 	<section class="featured-title">
@@ -65,21 +65,22 @@
 	</section>
 	<section class="featured-products">
 		<div class="fluid-wrapper">
-			<?php include("api/dynamic-content/featured.php"); ?>
+			<?php include("dynamic-content/featured.php"); ?>
 			<!--<div class="product-card">
-				<div class="image"></div>
+				<div class="image" style="background: url('public/images/products/1.jpeg') center no-repeat; background-size: cover;"></div>
 				<div class="description">
+					<p class="categories">Chemise, Homme</p>
 					<p class="name">Chemise laine</p>
 					<p class="price">$25.00</p>
+					<a class="addtocart" href="#">Ajouter au panier</a>
 				</div>
-				<a class="addtocart"></a>
 			</div>-->
 		</div>
 	</section>
 	<footer>
 		<div class="fluid-wrapper">
-			<p>Copyright 2015 &copy Jason & Adrien</p>
-			<a class="backoffice-link">Backoffice</a>
+			<p class="copyright">Copyright 2015 &copy Jason & Adrien</p>
+			<a class="backoffice-link" href="#">Backoffice</a>
 		</div>
 	</footer>
 </body>
