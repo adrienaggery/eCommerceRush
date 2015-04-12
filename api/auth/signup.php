@@ -1,7 +1,7 @@
 <?php
 if (!empty($_POST["username"]) && !empty($_POST["password"]))
 {
-	include("../dbconnect.php");
+	include("db/connect.php");
 
 	// Hashing
 	$username = $_POST["username"];
@@ -17,11 +17,11 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 
 	if (mysqli_stmt_errno($query) === 1062) // User exists
 	{
-        echo "<script type='text/javascript'>document.location.replace('signup_error.php');</script>";
+        echo "<script type='text/javascript'>document.location.replace('signup.php');</script>";
 	}
 	else if (mysqli_stmt_errno($query)) // Unknown error
 	{
-        echo "<script type='text/javascript'>document.location.replace('signup_error.php');</script>";
+        echo "<script type='text/javascript'>document.location.replace('signup.php');</script>";
 	}
 	else // All good!
 	{
@@ -33,7 +33,6 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 	mysqli_close($db);
 }
 else {
-	$response["error"] = 1;
-	$response["msg"] = "Empty username or password";
+    echo "<script type='text/javascript'>document.location.replace('signup.php');</script>";
 }
 ?>
