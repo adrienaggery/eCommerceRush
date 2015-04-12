@@ -17,7 +17,5 @@ foreach($_SESSION["cart"] as $item_id => $item_count){
 	$totalprice += ($item_price * $item_count);
     $totalitems += $item_count;
 }
-echo '<p class="cart-desc"> ' . $totalitems . ' items<br/><span>$' . $totalprice. '</span><ul>';
-include("cart-items.php");
-echo '</ul></p>';
+echo '<p class="cart-desc"> ' . $totalitems . ' items<br/><span>$' . $totalprice. '</span></p>';
 ?>
