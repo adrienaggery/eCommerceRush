@@ -59,7 +59,7 @@
 	</section>
 	<section class="featured-title">
 		<div class="fluid-wrapper">
-			<p>Featured</p>
+			<p>FEATURED</p>
 			<div class="line"></div>
 		</div>
 	</section>
