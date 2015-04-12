@@ -46,7 +46,7 @@ include("dynamic-content/canaccessbo.php");
 		<div class="fluid-wrapper">
 			<div class="auth-bloc login">
 				<p class="title">Available products</p>
-				<p class="product-list"><span class="list-name"></span><span class="list-price"></span><span class="list-stock"></span><a class="list-featured" href="handles/feature_bo.php"></a><a class="list-delete" href="handles/delete_bo.php"></a></p>
+				    <?php include("dynamic-content/list_product_bo.php"); ?>
 			</div><!-- WP
 			--><div class="auth-bloc register">
 				<p class="title">Add a product</p>
