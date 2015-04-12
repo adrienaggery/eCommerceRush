@@ -17,11 +17,11 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 
 	if (mysqli_stmt_errno($query) === 1062) // User exists
 	{
-        echo "<script type='text/javascript'>document.location.replace('signup.php');</script>";
+        echo "<script type='text/javascript'>document.location.replace('register.php');</script>";
 	}
 	else if (mysqli_stmt_errno($query)) // Unknown error
 	{
-        echo "<script type='text/javascript'>document.location.replace('signup.php');</script>";
+        echo "<script type='text/javascript'>document.location.replace('register.php');</script>";
 	}
 	else // All good!
 	{
@@ -33,6 +33,6 @@ if (!empty($_POST["username"]) && !empty($_POST["password"]))
 	mysqli_close($db);
 }
 else {
-    echo "<script type='text/javascript'>document.location.replace('signup.php');</script>";
+    echo "<script type='text/javascript'>document.location.replace('register.php');</script>";
 }
 ?>
