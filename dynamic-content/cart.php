@@ -1,9 +1,12 @@
 <?php
 session_start();
 
-include("../dbconnect.php");
+include("db/connect.php");
+
+$_SESSION['cart']['1'] = 2;
 
 $totalprice = 0;
+
 foreach($_SESSION["cart"] as $item_id => $item_count){
 	$query = mysqli_stmt_init($db);
 	mysqli_stmt_prepare($query, 'SELECT product_price FROM products WHERE id=?');

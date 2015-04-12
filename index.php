@@ -46,7 +46,7 @@
 				</nav>
 				<div class="cart">
 					<img class="cart-icon" height="32" width="32" src="http://placehold.it/32x32" />
-					<?php include("api/dynamic-content/cart.php"); ?>
+					<?php include("dynamic-content/cart.php"); ?>
 				</div>
 			</div>
 		</div>
