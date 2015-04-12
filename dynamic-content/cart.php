@@ -3,6 +3,7 @@ session_start();
 include("db/connect.php");
 
 $totalprice = 0;
+$totalitems = 0;
 
 foreach($_SESSION["cart"] as $item_id => $item_count){
 	$query = mysqli_stmt_init($db);
